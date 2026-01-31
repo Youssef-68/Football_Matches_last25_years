@@ -22,4 +22,5 @@ JOIN Divisions d ON mn.division_id = d.division_id
 JOIN Teams ht ON mn.home_team_id = ht.team_id
 JOIN Teams at ON mn.away_team_id = at.team_id
 WHERE d.division_name = 'E0'
+
 ORDER BY mn.match_date, d.division_name, ht.team_name;
